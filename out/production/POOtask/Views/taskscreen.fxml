@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerTaskSc">
+   <children>
+      <ImageView fitHeight="130.0" fitWidth="275.0" layoutX="4.0" layoutY="13.0">
+         <image>
+            <Image url="@../Models/miniPOO.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="27.0" layoutY="182.0" text="Tarefa" />
+      <TextField fx:id="tftask" layoutX="27.0" layoutY="199.0" prefHeight="25.0" prefWidth="230.0" promptText="Insira um nome para a tarefa" />
+      <Label layoutX="27.0" layoutY="233.0" text="Descrição" />
+      <TextArea fx:id="tfdescription" layoutX="27.0" layoutY="251.0" prefHeight="93.0" prefWidth="230.0" promptText="Adicione uma descrição para a tarefa" />
+      <Label layoutX="27.0" layoutY="354.0" text="Data da tarefa" />
+      <DatePicker fx:id="pickdate" layoutX="27.0" layoutY="371.0" prefHeight="25.0" prefWidth="145.0" promptText="dd/mm/aa" />
+      <Button fx:id="buttoncreatetask" layoutX="182.0" layoutY="371.0" mnemonicParsing="false" onAction="#actbuttoncreatetask" text="Criar tarefa" />
+      <Button fx:id="buttonlogout" layoutX="14.0" layoutY="461.0" mnemonicParsing="false" onAction="#actbuttonlogout" text="Log out" />
+      <TableView fx:id="listtask" layoutX="281.0" layoutY="13.0" prefHeight="445.0" prefWidth="310.0">
+        <columns>
+          <TableColumn prefWidth="155.0" text="Nome da tarefa" />
+          <TableColumn prefWidth="155.0" text="Data da tarefa" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonedittask" layoutX="482.0" layoutY="461.0" mnemonicParsing="false" text="Editar" />
+      <Button fx:id="buttondeletetask" layoutX="541.0" layoutY="461.0" mnemonicParsing="false" text="Excluir" />
+   </children>
+</AnchorPane>

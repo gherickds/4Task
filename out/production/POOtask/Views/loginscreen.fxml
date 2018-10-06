@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="Controller.ControllerLoginSc">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="550.0">
+         <children>
+            <Label layoutX="176.0" layoutY="275.0" text="Nome de usuário" />
+            <TextField fx:id="tfuser" layoutX="176.0" layoutY="292.0" prefHeight="25.0" prefWidth="200.0" promptText="Insira seu nome de usuário" />
+            <Label layoutX="176.0" layoutY="330.0" text="Senha" />
+            <PasswordField fx:id="tfpass" layoutX="176.0" layoutY="347.0" prefHeight="25.0" prefWidth="200.0" promptText="Insira sua senha" />
+            <CheckBox fx:id="boxremember" layoutX="176.0" layoutY="379.0" mnemonicParsing="false" text="Lembre-se de mim" />
+            <Button fx:id="buttonlogin" layoutX="236.0" layoutY="424.0" mnemonicParsing="false" onAction="#actbuttonlogin" text="Conectar" />
+            <Label layoutX="206.0" layoutY="466.0" text="Não possui uma conta?" />
+            <Button fx:id="buttonregister" layoutX="337.0" layoutY="462.0" mnemonicParsing="false" onAction="#actbuttonregister" prefHeight="25.0" prefWidth="121.0" text="Inscreva-se" />
+            <ImageView fx:id="img" fitHeight="185.0" fitWidth="425.0" layoutX="64.0" layoutY="39.0">
+               <image>
+                  <Image url="@../Models/POO.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

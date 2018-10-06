@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerRegisterSc">
+   <children>
+      <Label layoutX="174.0" layoutY="256.0" text="Nome de usuário" />
+      <TextField fx:id="tfuserregister" layoutX="174.0" layoutY="273.0" prefHeight="25.0" prefWidth="200.0" promptText="Insira um nome de usuário" />
+      <Label layoutX="174.0" layoutY="306.0" text="Email" />
+      <TextField fx:id="tfemailregister" layoutX="174.0" layoutY="324.0" prefHeight="25.0" prefWidth="200.0" promptText="Insira seu Email" />
+      <Label layoutX="174.0" layoutY="357.0" text="Senha" />
+      <PasswordField fx:id="tfpassregister" layoutX="176.0" layoutY="374.0" prefHeight="25.0" prefWidth="200.0" promptText="Insira uma senha" />
+      <Button fx:id="buttonregister2" layoutX="234.0" layoutY="423.0" mnemonicParsing="false" onAction="#actbuttonregister2" text="Registrar-se" />
+      <ImageView fitHeight="185.0" fitWidth="425.0" layoutX="64.0" layoutY="39.0">
+         <image>
+            <Image url="@../Models/POO.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbregister" layoutX="170.0" layoutY="401.0" onDragDetected="#actbuttonregister2" />
+      <ImageView layoutX="7.0" layoutY="6.0">
+         <image>
+            <Image url="@../Models/backscreen.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="backtologin" fitHeight="57.0" fitWidth="55.0" layoutX="7.0" layoutY="3.0" onMousePressed="#clickbacktologin" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
