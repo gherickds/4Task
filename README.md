@@ -3,7 +3,7 @@
 
 ## Códigos para criação do banco de dados
 
-# Table usuarios
+## Table usuarios
 CREATE TABLE `usuarios` (
   `idUsuario` int(11) NOT NULL AUTO_INCREMENT,
   `nomeUsuario` varchar(250) NOT NULL,
@@ -12,7 +12,8 @@ CREATE TABLE `usuarios` (
   PRIMARY KEY (`idUsuario`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
-# Tabela tarefas
+## Tabela tarefas
+```sql
 CREATE TABLE `tarefas` (
   `idTarefa` int(11) NOT NULL AUTO_INCREMENT,
   `nomeTarefa` varchar(300) NOT NULL,
@@ -20,3 +21,4 @@ CREATE TABLE `tarefas` (
   `idUsuario` int(11) NOT NULL,
   PRIMARY KEY (`idTarefa`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+```
