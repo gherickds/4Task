@@ -3,7 +3,7 @@
 
 ## Códigos para criação do banco de dados
 
-## Table usuarios
+## Tabela usuarios
 ```sql
 CREATE TABLE `usuarios` (
   `idUsuario` int(11) NOT NULL AUTO_INCREMENT,
